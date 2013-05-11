@@ -1,0 +1,17 @@
+<% if flash[:alert] %>
+  <%= flash[:alert] %>
+<% end %>
+
+
+<br /><br /><br />
+
+ここは
+sessions#newです。
+
+<br /><br /><br />
+
+<p>
+  <strong>Don&rsquo;t use these services?</strong>
+  <%= link_to "Create an account", "/auth/identity/register" %> or
+  <%= link_to "login", "/auth/identity" %> with a password.
+</p>

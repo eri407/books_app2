@@ -1,0 +1,18 @@
+        books GET    /books(.:format)                   {:action=>"index", :controller=>"books"}
+              POST   /books(.:format)                   {:action=>"create", :controller=>"books"}
+     new_book GET    /books/new(.:format)               {:action=>"new", :controller=>"books"}
+    edit_book GET    /books/:id/edit(.:format)          {:action=>"edit", :controller=>"books"}
+         book GET    /books/:id(.:format)               {:action=>"show", :controller=>"books"}
+              PUT    /books/:id(.:format)               {:action=>"update", :controller=>"books"}
+              DELETE /books/:id(.:format)               {:action=>"destroy", :controller=>"books"}
+         root        /                                  {:controller=>"sessions", :action=>"new"}
+                     /auth/:provider/callback(.:format) {:controller=>"sessions", :action=>"create"}
+ auth_failure        /auth/failure(.:format)            {:controller=>"sessions", :action=>"failure"}
+       logout        /logout(.:format)                  {:controller=>"sessions", :action=>"destroy"}
+   identities GET    /identities(.:format)              {:action=>"index", :controller=>"identities"}
+              POST   /identities(.:format)              {:action=>"create", :controller=>"identities"}
+ new_identity GET    /identities/new(.:format)          {:action=>"new", :controller=>"identities"}
+edit_identity GET    /identities/:id/edit(.:format)     {:action=>"edit", :controller=>"identities"}
+     identity GET    /identities/:id(.:format)          {:action=>"show", :controller=>"identities"}
+              PUT    /identities/:id(.:format)          {:action=>"update", :controller=>"identities"}
+              DELETE /identities/:id(.:format)          {:action=>"destroy", :controller=>"identities"}
